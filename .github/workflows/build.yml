@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: IGChat
+        working-directory: IGChat_v1.2/IGChat
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -22,4 +22,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: IGChat-apk
-          path: IGChat/app/build/outputs/apk/debug/*.apk
+          path: IGChat_v1.2/IGChat/app/build/outputs/apk/debug/*.apk
