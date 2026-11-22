@@ -49,7 +49,6 @@ class MainActivity : Activity() {
     companion object {
         /** Či je apka práve na obrazovke – vtedy kontrola na pozadí nenotifikuje. */
         @Volatile
-        @JvmStatic
         var isVisible = false
 
         private const val NOTIF_PERM_REQ = 2001
